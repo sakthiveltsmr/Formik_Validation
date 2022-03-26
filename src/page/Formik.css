@@ -16,7 +16,7 @@
   background-color: rgb(10, 87, 10);
   color: white;
 }
-/* .feild {
-  /* position: fixed; */
-/* margin-right: 20rem; */
-/* } */
+.feild {
+  position: fixed;
+  margin-right: 20rem;
+}

@@ -33,18 +33,22 @@ export default function Formiks() {
           return (
             <div className="form-container">
               <h1>Register</h1>
-              <div className="feild">
-                <Form>
+              <Form>
+                <div className="feild">
                   <label>Name </label>
                   <Field type="text" className="feild-container" name="name" />
                   {/* <br /> */}
                   <ErrorMessage name="name" />
                   <br />
+                </div>
+                <div className="feild">
                   <label>Email </label>
                   <Field type="email" name="email" />
                   {/* <br /> */}
                   <ErrorMessage name="email" />
                   <br />
+                </div>
+                <div className="feild">
                   <label>Password </label>
                   <Field
                     type="text"
@@ -54,12 +58,12 @@ export default function Formiks() {
                   {/* <br /> */}
                   <ErrorMessage name="password" />
                   <br />
+                </div>
 
-                  <button className="btn" type="submit">
-                    signup
-                  </button>
-                </Form>
-              </div>
+                <button className="btn" type="submit">
+                  signup
+                </button>
+              </Form>
             </div>
           );
         }}
