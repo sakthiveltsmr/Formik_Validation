@@ -1,10 +1,10 @@
 import "./App.css";
-import Formik from "./page/Formik";
+import Formiks from "./page/Formik";
 
 function App() {
   return (
     <div className="App">
-      <Formik />
+      <Formiks />
     </div>
   );
 }
