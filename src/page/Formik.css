@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
   margin-top: 5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   height: 50vh;
   background: cyan;
   border: none;
@@ -16,3 +16,7 @@
   background-color: rgb(10, 87, 10);
   color: white;
 }
+/* .feild {
+  /* position: fixed; */
+/* margin-right: 20rem; */
+/* } */
