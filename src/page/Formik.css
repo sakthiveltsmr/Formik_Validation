@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  height: 50vh;
+  background: cyan;
+  border: none;
+  box-shadow: 2px 5px 4px 4px black;
+  border-radius: 15px;
+}
