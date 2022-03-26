@@ -8,7 +8,7 @@ export default function Formiks() {
     passwprd: "",
   };
 
-  const signUpSchema = Yup.object({
+  const signUp = Yup.object({
     name: Yup.string()
       .min(4, "first name should be greather 3")
       .max(8, "firstName should be less than 9")
@@ -26,7 +26,7 @@ export default function Formiks() {
     <div className="container">
       <Formik
         initialValues={initialstate}
-        validationSchema={signUpSchema}
+        validationSchema={signUp}
         onSubmit={(values) => {
           console.log(values);
         }}
