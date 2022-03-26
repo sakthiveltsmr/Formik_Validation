@@ -6,7 +6,7 @@ export default function Formiks() {
   const initialstate = {
     name: "",
     email: "",
-    passwprd: "",
+    password: "",
   };
 
   const signUp = Yup.object({
@@ -17,10 +17,7 @@ export default function Formiks() {
 
     email: Yup.string().email("should be valid email").required("required *"),
 
-    password: Yup.string()
-      .min(4, "should be greater than 3")
-      .max(6, "should be less than 7")
-      .required("*"),
+    password: Yup.string().min(4, "should be greater than 3").required("*"),
   });
 
   return (
@@ -36,26 +33,33 @@ export default function Formiks() {
           return (
             <div className="form-container">
               <h1>Register</h1>
-              <Form>
-                <label>Name </label>
-                <Field type="text" className="name" name="name" />
-                {/* <br /> */}
-                <ErrorMessage name="name" />
-                <br />
-                <label>Email </label>
-                <Field type="email" name="email" />
-                {/* <br /> */}
-                <ErrorMessage name="email" />
-                <br />
-                <label>Password </label>
-                <Field type="text" name="password" />
-                {/* <br /> */}
-                <ErrorMessage name="password" />
-                <br />
-                <button className="btn" type="submit">
-                  signup
-                </button>
-              </Form>
+              <div className="feild">
+                <Form>
+                  <label>Name </label>
+                  <Field type="text" className="feild-container" name="name" />
+                  {/* <br /> */}
+                  <ErrorMessage name="name" />
+                  <br />
+                  <label>Email </label>
+                  <Field type="email" name="email" />
+                  {/* <br /> */}
+                  <ErrorMessage name="email" />
+                  <br />
+                  <label>Password </label>
+                  <Field
+                    type="text"
+                    className="feild-container"
+                    name="password"
+                  />
+                  {/* <br /> */}
+                  <ErrorMessage name="password" />
+                  <br />
+
+                  <button className="btn" type="submit">
+                    signup
+                  </button>
+                </Form>
+              </div>
             </div>
           );
         }}
