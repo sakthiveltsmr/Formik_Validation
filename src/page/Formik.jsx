@@ -11,8 +11,8 @@ export default function Formiks() {
 
   const signUp = Yup.object({
     name: Yup.string()
-      .min(4, "first name should be greather 3")
-      .max(8, "firstName should be less than 9")
+      .min(4, " name should be greather 3")
+      .max(11, "Name should be less than 10")
       .required("should not be empty"),
 
     email: Yup.string().email("should be valid email").required("required *"),
