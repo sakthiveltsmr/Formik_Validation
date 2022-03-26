@@ -12,3 +12,7 @@
   box-shadow: 2px 5px 4px 4px black;
   border-radius: 15px;
 }
+.btn {
+  background-color: rgb(10, 87, 10);
+  color: white;
+}

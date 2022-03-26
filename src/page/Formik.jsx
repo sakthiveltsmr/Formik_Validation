@@ -37,19 +37,24 @@ export default function Formiks() {
             <div className="form-container">
               <h1>Register</h1>
               <Form>
-                <label>Name</label>
+                <label>Name </label>
                 <Field type="text" className="name" name="name" />
+                {/* <br /> */}
                 <ErrorMessage name="name" />
                 <br />
-                <label>Email</label>
+                <label>Email </label>
                 <Field type="email" name="email" />
+                {/* <br /> */}
                 <ErrorMessage name="email" />
                 <br />
-                <label>Password</label>
+                <label>Password </label>
                 <Field type="text" name="password" />
+                {/* <br /> */}
                 <ErrorMessage name="password" />
                 <br />
-                <button type="submit">signup</button>
+                <button className="btn" type="submit">
+                  signup
+                </button>
               </Form>
             </div>
           );
