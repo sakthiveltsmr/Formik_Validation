@@ -36,7 +36,7 @@ export default function Formiks() {
               <Form>
                 <div className="feild">
                   <label>Name </label>
-                  <Field type="text" className="feild-container" name="name" />
+                  <Field type="text" name="name" />
                   {/* <br /> */}
                   <ErrorMessage name="name" />
                   <br />
@@ -50,11 +50,7 @@ export default function Formiks() {
                 </div>
                 <div className="feild">
                   <label>Password </label>
-                  <Field
-                    type="text"
-                    className="feild-container"
-                    name="password"
-                  />
+                  <Field type="text" name="password" />
                   {/* <br /> */}
                   <ErrorMessage name="password" />
                   <br />
