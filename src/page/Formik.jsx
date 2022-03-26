@@ -8,15 +8,17 @@ export default function Formiks() {
     passwprd: "",
   };
 
-  const register = Yup.object({
+  const signUpSchema = Yup.object({
     name: Yup.string()
-      .max(11, "name should be less than 10 character")
-      .min(4, "name should be greater than 3 character")
-      .required("pls fill the feild"),
-    email: Yup.string().email().required("enter valid email"),
-    passwprd: Yup.string()
-      .min(4, "pwd should be greater then 3")
-      .max(11, "pwd should be less then 10 ")
+      .min(4, "first name should be greather 3")
+      .max(8, "firstName should be less than 9")
+      .required("should not be empty"),
+
+    email: Yup.string().email("should be valid email").required("required *"),
+
+    password: Yup.string()
+      .min(4, "should be greater than 3")
+      .max(6, "should be less than 7")
       .required("*"),
   });
 
@@ -24,7 +26,7 @@ export default function Formiks() {
     <div className="container">
       <Formik
         initialValues={initialstate}
-        validation={register}
+        validationSchema={signUpSchema}
         onSubmit={(values) => {
           console.log(values);
         }}
